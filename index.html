@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Connor's Camera</title>
+        <link rel="stylesheet" href="styles.css"
+        type="text/css">
+
+    </head>
+    <body>
+
+        <a href="index.html"><img class="logo" src="logo.jpg"></a>
+
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Link 2</a>
+            <a href="contact.html">Link 3</a>
+        </nav>
+
+        <!--
+        Start Slideshow
+        Code from W3Schools- make sure to use these classes for the animation to work
+        -->
+        <div class="w3-content w3-section">
+          <img class="mySlides w3-animate-fading" src="https://cdn.pixabay.com/photo/2015/07/02/10/22/stone-arch-828730_960_720.jpg">
+          <img class="mySlides w3-animate-fading" src="https://cdn.pixabay.com/photo/2020/02/05/09/57/mountain-4820681_960_720.jpg">
+          <img class="mySlides w3-animate-fading" src="https://cdn.pixabay.com/photo/2014/07/13/19/45/desert-392747_960_720.jpg">
+          <img class="mySlides w3-animate-fading" src="https://cdn.pixabay.com/photo/2018/02/26/21/01/cyprus-3184019_960_720.jpg">
+        </div>
+        <!-- End Slideshow -->
+
+        <!--
+        Place this javascript near the bottom of your HTML document, right above the closing body tag
+        -->
+        <script>
+          var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 9000);
+        }
+        </script>
+
+
+
+        <div class="hero">
+
+          <h2>Make an appointment</h2>
+          <button>Book Me</button>
+        </div>
+              <main>
+                <div class="flexItem">
+                  <h3>Services</h3>
+                  <p>At Highland Beauty & Barber, we offer a full line of beauty and wellness services.</p>
+
+                  <p>We have a unique, team-based approach to our services that enables us to offer the best possible experience while also allowing convenient appointment scheduling. Further, the team-based approach lends itself to a well-educated staff that is always growing and learning from one another.</p>
+                </div>
+
+                <div class="flexItem">
+                  <h3>Services</h3>
+                  <p>At Highland Beauty & Barber, we offer a full line of beauty and wellness services.</p>
+
+                  <p>We have a unique, team-based approach to our services that enables us to offer the best possible experience while also allowing convenient appointment scheduling. Further, the team-based approach lends itself to a well-educated staff that is always growing and learning from one another.</p>
+                </div>
+
+                <div class="flexItem">
+                  <h3>Services</h3>
+                  <p>At Highland Beauty & Barber, we offer a full line of beauty and wellness services.</p>
+
+                  <p>We have a unique, team-based approach to our services that enables us to offer the best possible experience while also allowing convenient appointment scheduling. Further, the team-based approach lends itself to a well-educated staff that is always growing and learning from one another.</p>
+                </div>
+
+                <div class="flexItem">
+                  <h3>Services</h3>
+                  <p>At Highland Beauty & Barber, we offer a full line of beauty and wellness services.</p>
+
+                  <p>We have a unique, team-based approach to our services that enables us to offer the best possible experience while also allowing convenient appointment scheduling. Further, the team-based approach lends itself to a well-educated staff that is always growing and learning from one another.</p>
+                </div>
+
+              </main>
+              <footer>
+                <p> &copy; 2019 Highland Beauty &amp; Barber | <a href="#"> Back to top</p>
+              </footer>
+    </body>
+</html>
