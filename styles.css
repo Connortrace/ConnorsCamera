@@ -61,6 +61,28 @@ nav a:hover{
   right: 5%;
 }
 
+.about-our-store{
+  text-align: center;
+  font-family:"Times Roman";
+  font-size: 2em;
+}
+
+.why{
+  text-align: center;
+  font-family: Verdana;
+  font-size: 2em;
+}
+
+.paragraph{
+  font-size: 1.8em;
+  font-family: Verdana;
+}
+
+.hours{
+  font-size: 1.5em;
+  font-family: Verdana;
+}
+
 .about-hero{
   background-image: url("");
   height: 400px;
@@ -75,7 +97,6 @@ nav a:hover{
   right: 5%;
 }
 
-
 main{
 maring:20px auto;
 display: flex;
@@ -88,6 +109,7 @@ flex-wrap: wrap;
     margin: 2px;
     background: rgba(255, 255, 255, 0.5);
     padding: 30px;
+    text-align: center;
 }
 
 img{
