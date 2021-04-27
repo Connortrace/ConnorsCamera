@@ -5,6 +5,11 @@ body{
     font-family: helvetica, sans-serif;
 }
 
+
+tbody{
+width: 900px;
+}
+
 .w3-section{
 background:white;
 padding:0;
